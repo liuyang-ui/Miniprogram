@@ -1,0 +1,4 @@
+<!--pages/about/about.wxml-->
+<text class="title">你好，小程序</text>
+<button size="mini">按钮</button>
+<!-- <image src="网络图片"></image> -->
