@@ -1,2 +1,16 @@
 <!--pages/home/home.wxml-->
-<text>Hello World</text>
+<!-- <text>Hello World</text> -->
+<!-- 小程序的数据绑定 -->
+<!-- <view>Hello {{name}}</view>
+<view>我的年龄:{{age}}</view>
+<!-- 列表展示:vx:for -->
+<view wx:for="{{students}}">{{item.name}}---{{item.age}}</view>
+<!-- 事件监听改变数据 -->
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap='handBtnClick'>点击+</button>
+<button size="mini" bindtap='handBtnSubtraction'>点击-</button>
+<!-- 获取用户信息的方式 -->
+<button size="mini" open-type='getUserInfo' bindgetuserinfo="getUserInfo">获取授权</button>
+<!-- 展示用户信息的方式 -->
+<open-data type="userAvatarUrl"></open-data>
+

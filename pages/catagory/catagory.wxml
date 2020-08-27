@@ -1,0 +1,6 @@
+<!--pages/catagory/catagory.wxml-->
+<text>pages/catagory/catagory.wxml</text>
+
+<view>{{message}}</view>
+<view wx:for="{{list}}">---{{item}}</view>
+<button bindtap="handBtnClick">按钮</button>

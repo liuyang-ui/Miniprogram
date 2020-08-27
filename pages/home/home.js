@@ -1,66 +1,33 @@
-// pages/home/home.js
+//注册一个小程序
+const app=getApp()
+const name = app.globalData.name
+const age=app.globalData.age
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+    name:'coderwhy',
+    age:'18',
+    students:[
+      {id:110,name:"kobe",age:34},
+      {id:111,name:"kwhy",age:32},
+      {id:111,name:"jan",age:30},
+      {id:111,name:"kangkang",age:20}
+    ],
+    counter:0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  getUserInfo(event){
+    console.log(event)
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handBtnClick(){
+  //  this.data.counter++
+  //  console.log(this.data.counter)
+  this.setData({
+    counter:this.data.counter+=1
+  })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+handBtnSubtraction(){
+  console.log(this)
+  this.setData({
+    counter:this.data.counter-=1
+  })
   }
 })
