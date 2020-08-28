@@ -12,5 +12,19 @@
 <!-- 获取用户信息的方式 -->
 <button size="mini" open-type='getUserInfo' bindgetuserinfo="getUserInfo">获取授权</button>
 <!-- 展示用户信息的方式 -->
-<open-data type="userAvatarUrl"></open-data>
-
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<text>你好\n</text>
+<!-- 手机端可以选中 -->
+<text selectable='true'>hello,liuyang\n</text>
+<text>Hello,world\n</text>
+<text space='{{nbsp}}'>Hello,world\n</text>
+<text space='{{emsp}}'>Hello,world\n</text>
+<text space='{{ensp}}'>Hello,world\n</text>
+<button type="primary">按钮</button>
+<button type="warn">liuayang</button>
+<button plain>liuayang</button>
+<button disabled>不可用</button>
+<button loading>liuyang</button>
+<view>
+<button>hahaha</button>
+</view>
